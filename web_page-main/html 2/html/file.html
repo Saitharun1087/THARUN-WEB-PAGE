@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web_page</title>
+    <style>
+
+        body {
+            background-color: aqua;
+            background-image: url("https://images.pexels.com/photos/292442/pexels-photo-292442.jpeg?cs=srgb&dl=beach-dawn-dusk-292442.jpg&fm=jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h2{
+            margin-left: 80px;
+            margin-top: 20px;
+            color: orangered;
+
+        }
+        .nr{
+            display: flex;
+            gap: 40px;
+            margin-right: 100px;
+        }
+        .nav{
+            display: flex;
+            justify-content: center;
+            height: 50px;
+
+        }
+        .nr a{
+            text-decoration: none;
+            color: white;
+            margin-top: -10pxpx;
+            transition: 0.04 linear;
+            
+        }
+        .nr a:hover{
+            text-decoration: 4px rgb(249, 246, 246) underline;
+            color: aqua;
+        }
+        .src{
+            background: transparent;
+            border: 2px solid orangered;
+            width: 200px;
+            height: 30px;
+            color: white;
+            border-radius: 10px;
+            text-decoration: white;
+        }
+        .clr{
+            border: 1px solid orangered;
+            background-color: orangered;
+            width: 100px;
+            height: 30px;
+        }
+        .src:focus{
+            outline: none;
+        }
+        .clr:active{
+            outline: none;
+            background-color: aliceblue;
+
+        }
+        .content{
+            width: 1200px;
+            height: auto;
+            margin-left: 20px;
+            color: aliceblue;
+        } 
+        .content .btn{
+            width: 100px; 
+            height: 35px;
+            background-color: orangered;
+            border: 1px solid orangered;
+            border-radius: 15px; 
+            transition: .5s ease ;
+         
+        }
+        .btn:active{
+            background-color: antiquewhite;
+        }
+        .from{
+            width: 250px;
+            height: 380px;
+            background: linear-gradient(to right, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+            padding: 25px;
+            border: 1px solid white;
+            position: absolute;
+            top: 150px;
+            left: 850px;
+        }
+        .from h2{
+            width: 220px;
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 22px;
+            background-color: aliceblue;
+            border-radius: 10px;
+            margin: 2px;
+            padding: 8px;
+        }
+        .from input{
+            width: 250px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 2px solid orange;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-top: 20px;
+            color: white;
+            letter-spacing: 1px;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+        .from input::placeholder{
+            outline: none;
+            color: aliceblue    ;
+        }
+
+        .btn-2{
+            width: 250px;
+            height: 35px;
+            background-color: orangered;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid orange;
+            border-radius: 10px;
+            margin-top: 30px;
+            
+        }
+        .btn-2:hover{
+            background-color: aliceblue;
+
+        }
+        .link{
+            margin-left: 50px;
+            margin-top: 40px;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+
+        .from a{
+            margin-top: 10px;
+            font-family: sans-serif;
+            font-size: 15px;
+            color: orangered;
+            text-decoration: none;
+            margin-left: 70px;
+         
+        }
+        span{
+            color: aliceblue;
+        }
+        .tel{
+            margin-left: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>PraRoz</h2>
+    <div class="nav">
+        <div class="nl"></div>
+        <div class="nr">
+            <a href="">HOME</a> 
+            <a href="">ABOUT</a>
+            <a href="">SERVICE</a>
+            <a href="">DESIGN</a>
+            <a href="">CONTACT</a>
+        </div>
+        <div class="search">
+            <input class="src" type="search" placeholder="type to text">
+            <a href="#"> <button class="clr">search</button></a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Web Design &<br>development<br>Cource</h1>
+        <p>Web designing is the process of creating and arranging content on websites.<br> It involves a combination of graphic design, user experience (UX), <br>and front-end development skills to make a visually appealing and functional site.<br> The goal is to ensure the website is easy to navigate, mobile-friendly, and provides a great user experience.<br> Designers work with tools like HTML, CSS, JavaScript, and design software to create layouts, colors, and typography.<br> Good web design enhances a site's usability and helps it stand out in a crowded online space.</p>
+
+        <a href="https://www.design.com/s/website-builder?utm_adgroup=website_designer&utm_keyword=web+designer&utm_network=o&msclkid=0be04d29925f15a8829a2af588019dfd&utm_source=bing&utm_medium=cpc&utm_campaign=ROW+-+Website+Builder&utm_term=web+designer&utm_content=Website+Designer"><button class="btn">JOIN US</button></a>
+
+        <form class="from">
+            <h2>Login here</h2>
+            <input type="email" placeholder="enter your email"><br><br>
+            <input type="password" placeholder="enter your password"><br>
+            <button class="btn-2">Login</button>
+            <p class="link">Don't have an account</p>
+            <p><a href="sign.html">sign up<span> here</span></a></p>
+            <p class="tel">log in with</p>
+        </form>
+    </div>
+</body>
+</html>
